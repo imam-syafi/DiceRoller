@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             with(image) {
+                animate().rotationBy(360f).start()
                 contentDescription = getString(R.string.dice_side, side)
                 setImageResource(id)
             }
